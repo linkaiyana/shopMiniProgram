@@ -1,0 +1,7 @@
+/* pages/detail/childCpns/y-detail-swiper/y-detail-swiper.wxss */
+.swiper {
+  height: 600rpx;
+}
+.item .img {
+  width: 100%;
+}

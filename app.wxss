@@ -1,0 +1,21 @@
+/**app.wxss**/
+page{
+    --color-text: #666;
+    --color-high-text: #ff5777;
+    --color-tint: #ff8198;
+    --color-background: #fff;
+    --color-bdbottom: #e9e4e4;
+    --color-dark-text: #b3b1b1;
+    --color-border: #e9e5e5;
+    --font-size: 14px;
+    --line-height: 1.5;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

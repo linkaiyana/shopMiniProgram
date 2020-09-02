@@ -1,0 +1,4 @@
+/* pages/home/childCpns/y-popular/y-popular.wxss */
+.popular .img {
+  width: 100%;
+}

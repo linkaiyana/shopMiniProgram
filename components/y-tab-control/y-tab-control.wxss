@@ -1,0 +1,17 @@
+/* components/y-tab-control/y-tab-control.wxss */
+.tab-control {
+  display: flex;
+  text-align: center;
+  line-height: 44px;
+  background-color: #fff;
+}
+.tab-control > .item {
+  flex: 1;
+}
+.item .text {
+  padding: 10rpx 10rpx;
+}
+.active .text {
+  color: var(--color-high-text);
+  border-bottom: 6rpx solid var(--color-tint);
+}

@@ -1,0 +1,49 @@
+/* pages/detail/childCpns/y-detail-baseinfo/y-detail-baseinfo.wxss */
+.base-info {
+  padding: 30rpx 20rpx 0;
+  border-bottom: 13rpx solid var(--color-border);
+}
+.price {
+  padding: 20rpx 0;
+  line-height: 48rpx;
+}
+.price > .new-price {
+  font-size: 48rpx;
+  color: var(--color-high-text);
+}
+.price > .old-price {
+  margin: 0 15rpx;
+  font-size: 28rpx;
+  color: var(--color-dark-text);
+  text-decoration: line-through;
+}
+.price > .desc {
+  position: relative;
+  top: -25rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+  color: #fff;
+  background-color: var(--color-high-text);
+}
+.detail {
+  font-size: 26rpx;
+  color: var(--color-dark-text);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+}
+.more {
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.more .img {
+  width: 24rpx;
+  margin-right: 5rpx;
+  vertical-align: middle;
+}
+.more .text {
+  font-size: 24rpx;
+}

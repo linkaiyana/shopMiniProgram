@@ -1,0 +1,10 @@
+<!--components/y-goods-item/y-goods-item.wxml-->
+<view class="goods-item" bind:tap="handleJump">
+	<image class="img" src="{{goodsItem.show.img}}" mode="widthFix" />
+	<view class="info">
+		<view class="desc">{{goodsItem.title}}</view>
+		<text class="price">￥{{goodsItem.price}}</text>
+		<image class="icon" src="/assets/home/collect.png" mode="widthFix" />
+		<text class="cfav">{{goodsItem.cfav}}</text>
+	</view>
+</view>

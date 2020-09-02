@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "y-detail-swiper": "/pages/detail/childCpns/y-detail-swiper/y-detail-swiper",
+    "y-detail-baseinfo": "/pages/detail/childCpns/y-detail-baseinfo/y-detail-baseinfo"
+  }
+}

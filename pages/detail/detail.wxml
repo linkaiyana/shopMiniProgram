@@ -1,0 +1,7 @@
+<!--pages/detail/detail.wxml-->
+<!-- 轮播图 -->
+<y-detail-swiper class="swiper" list="{{banners}}" />
+
+<!-- 基本信息 -->
+<y-detail-baseinfo base-info="{{baseInfo}}" />
+<text>{{iid}}</text>
