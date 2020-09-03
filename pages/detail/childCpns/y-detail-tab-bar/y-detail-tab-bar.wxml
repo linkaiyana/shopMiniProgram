@@ -1,0 +1,21 @@
+<!--pages/detail/childCpns/y-detail-tab-bar/y-detail-tab-bar.wxml-->
+<view class="tab-bar">
+	<view class="icon">
+		<view class="item">
+			<image class="img" src="/assets/detail/contact.png" />
+			<view class="txt">客服</view>
+		</view>
+		<view class="item">
+			<image class="img" src="/assets/detail/shop.png" />
+			<view class="txt">店铺</view>
+		</view>
+		<view class="item">
+			<image class="img" src="/assets/detail/collect.png" />
+			<view class="txt">收藏</view>
+		</view>
+	</view>
+	<view class="btn">
+		<view class="shopcar">加入购物车</view>
+		<view class="buy">购买</view>
+	</view>
+</view>

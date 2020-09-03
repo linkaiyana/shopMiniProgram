@@ -1,7 +1,32 @@
 <!--pages/detail/detail.wxml-->
+<!-- 顶部导航 -->
+<y-nav titles="{{titles}}" bind:itemTap="itemTap" id="nav" />
+<!-- 占位符 -->
+<view class="nav-box" ></view>
+
 <!-- 轮播图 -->
 <y-detail-swiper class="swiper" list="{{banners}}" />
 
 <!-- 基本信息 -->
 <y-detail-baseinfo base-info="{{baseInfo}}" />
-<text>{{iid}}</text>
+
+<!-- 商店信息 -->
+<y-detail-shopInfo shop-info="{{shopInfo}}" />
+
+<!-- 图片展示 -->
+<y-detail-more detail-info="{{detailInfo}}" bind:imageLoad="imageLoad" />
+
+<!--  详细信息展示 -->
+<y-detail-params shop-params="{{shopParams}}" id="params" />
+
+<!-- 展示评论信息 -->
+<y-detail-comment shop-comment="{{shopComment}}" id="comment" />
+
+<!-- 展示推荐数据 -->
+<y-goods goods="{{recommendGoods}}" id="recommend" />
+
+<!-- 占位符 -->
+<view class="box"></view>
+
+<!-- 底部tabbar -->
+<y-detail-tab-bar class="tab-bar" />

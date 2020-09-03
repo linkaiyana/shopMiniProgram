@@ -4,7 +4,7 @@
   <view class="price">
     <text class="new-price">{{baseInfo.price}}</text>
     <text class="old-price">{{baseInfo.oldPrice}}</text>
-    <text class="desc">{{baseInfo.desc}}</text>
+    <text wx:if="{{baseInfo.desc}}" class="desc">{{baseInfo.desc}}</text>
   </view>
   <view class="detail">
     <view>{{baseInfo.columns[0]}}</view>

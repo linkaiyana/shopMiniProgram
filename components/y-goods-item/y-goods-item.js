@@ -14,10 +14,13 @@ Component({
    */
   methods: {
     handleJump() {
-      const iid = this.properties.goodsItem.iid;
-      wx.navigateTo({
-        url: '/pages/detail/detail?iid=' + iid,
-      })
+      if(this.properties.goodsItem.iid !== undefined){
+        const iid = this.properties.goodsItem.iid;
+        wx.navigateTo({
+          url: '/pages/detail/detail?iid=' + iid,
+        })
+      }
+
     }
   }
 })

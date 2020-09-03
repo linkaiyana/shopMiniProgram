@@ -1,0 +1,26 @@
+<!--pages/detail/childCpns/y-detail-params/y-detail-params.wxml-->
+<view class="shop-params">
+	<view class="size">
+		<block wx:for="{{shopParams.rule.tables}}" wx:key="tindex" wx:for-item="table" wx:for-index="tindex">
+			<block wx:for="{{table}}" wx:for-item="tr" wx:for-index="rindex" wx:key="rindex">
+				<view class="tr">
+					<block wx:for="{{tr}}" wx:for-item="td" wx:for-index="dindex" wx:key="dindex">
+						<view class="td">{{td}}</view>
+					</block>
+				</view>
+			</block>
+		</block>
+	</view>
+  <view class="more">
+    <block wx:for="{{shopParams.info.set}}" wx:key="index">
+      <view class="tr">
+        <view class="key">{{item.key}}</view>
+        <view class="value">{{item.value}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="tips">
+    <view class="key">{{shopParams.rule.key}}</view>
+    <view class="value">{{shopParams.rule.disclaimer}}</view>
+  </view>
+</view>

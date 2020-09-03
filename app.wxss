@@ -9,6 +9,7 @@ page{
     --color-border: #e9e5e5;
     --font-size: 14px;
     --line-height: 1.5;
+
 }
 .container {
   height: 100%;

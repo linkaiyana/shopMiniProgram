@@ -1,0 +1,18 @@
+<!--pages/detail/childCpns/y-detail-commend/y-detail-commend.wxml-->
+<view class="comment" wx:if="{{shopComment.list !== undefined}}">
+  <view class="title">
+    <text>用户评论</text>
+    <text>更多({{shopComment.cRate}})</text>
+  </view>
+  <view class="message">
+    <image class="img" src="{{shopComment.list[0].user.avatar}}" mode="widthFix" />
+    <text class="name">{{shopComment.list[0].user.uname}}</text>
+  </view>
+  <view class="content">
+    {{shopComment.list[0].content}}
+  </view>
+  <view class="more">
+    <text class="time">{{newTime}}</text>
+    <text class="style">{{shopComment.list[0].style}}</text>
+  </view>
+</view>

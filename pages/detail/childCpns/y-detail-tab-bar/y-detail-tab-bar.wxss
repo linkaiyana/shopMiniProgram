@@ -1,0 +1,37 @@
+/* pages/detail/childCpns/y-detail-tab-bar/y-detail-tab-bar.wxss */
+.tab-bar {
+  display: flex;
+  height: 120rpx;
+  background-color: #fff;
+}
+.icon {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  /* background-color: #f00; */
+}
+.icon .txt {
+  font-size: 26rpx;
+  color: gray;
+}
+.icon > .item > .img {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+  background-position: 0 -73px;
+}
+.btn {
+  width: 50%;
+  display: flex;
+  text-align: center;
+  line-height: 120rpx;
+  color: #fff;
+}
+.btn > .shopcar {
+  width: 50%;
+  background-color: #ffa500;
+}
+.btn > .buy {
+  width: 50%;
+  background-color: #fd46a2;
+}

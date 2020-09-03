@@ -1,0 +1,6 @@
+<!--components/y-nav/y-nav.wxml-->
+<view class="nav">
+  <block wx:for="{{titles}}" wx:key="index">
+    <view class="{{currentIndex == index ? 'active' : ''}}" bind:tap="handleTap" data-index="{{index}}">{{item}}</view>
+  </block>
+</view>

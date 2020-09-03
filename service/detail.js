@@ -22,3 +22,30 @@ export class BaseInfo {
     this.services = services
   }
 }
+
+// 商店基本信息
+export class ShopInfo {
+  constructor(shopInfo) {
+    this.shopLogo = shopInfo.shopLogo;
+    this.name = shopInfo.name;
+    this.cSells = shopInfo.cSells;
+    this.cGoods = shopInfo.cGoods;
+    this.score = shopInfo.score;
+    
+  }
+}
+
+// 商品详细信息
+export class ShopParams {
+  constructor(info, rule) {
+    this.info = info,
+    this.rule = rule
+  }
+}
+
+// 推荐信息
+export function getRecommend() {
+  return request({
+    url: '/recommend'
+  })
+}

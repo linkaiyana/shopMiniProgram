@@ -21,7 +21,7 @@ Page({
       'new': {page: 0, list: []},
       'sell': {page: 0, list: []}
     },
-    currentType: 'new',
+    currentType: 'pop',
     isShowBackTop: false,
     isTabFixed: false,
     tabOffsetTop: 0

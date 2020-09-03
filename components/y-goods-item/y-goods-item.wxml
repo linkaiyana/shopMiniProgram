@@ -1,6 +1,6 @@
 <!--components/y-goods-item/y-goods-item.wxml-->
 <view class="goods-item" bind:tap="handleJump">
-	<image class="img" src="{{goodsItem.show.img}}" mode="widthFix" />
+	<image class="img" src="{{goodsItem.image || goodsItem.show.img}}" mode="widthFix" />
 	<view class="info">
 		<view class="desc">{{goodsItem.title}}</view>
 		<text class="price">￥{{goodsItem.price}}</text>

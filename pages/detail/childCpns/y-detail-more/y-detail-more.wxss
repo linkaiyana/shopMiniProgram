@@ -1,0 +1,39 @@
+/* pages/detail/childCpns/y-detail-more/y-detail-more.wxss */
+.detail-info {
+  padding: 30rpx 20rpx;
+  border-bottom: 13rpx solid var(--color-border);
+}
+
+.title > .before, .title > .after {
+  position: relative;
+  width: 250rpx;
+  height: 2rpx;
+  background-color: #000;
+}
+
+.before::before, .after::after {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #000;
+}
+.before {
+  float: left;
+}
+.after {
+  float: right;
+}
+.after::after {
+  float: right;
+  right: 0;
+}
+.title > .desc {
+  padding: 30rpx;
+  font-size: 28rpx;
+}
+.content .img {
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+<!--pages/detail/childCpns/y-detail-shopInfo/y-detail-shopInfo.wxml-->
+<view class="shop-info">
+	<view class="top">
+		<image class="img" src="{{shopInfo.shopLogo}}" mode="widthFix" />
+		<text class="txt">{{shopInfo.name}}</text>
+	</view>
+	<view class="middle">
+		<view class="del-info">
+			<view class="item">
+				<view class="num">{{formatData}}</view>
+				<view class="txt">总销量</view>
+			</view>
+			<view class="item">
+				<view class="num">{{shopInfo.cGoods}}</view>
+				<view class="txt">全部宝贝</view>
+			</view>
+		</view>
+		<view class="del-score">
+			<block wx:for="{{shopInfo.score}}" wx:key="index">
+				<view class="item">
+					<text class="desc">{{item.name}}</text>
+					<text class="score {{item.isBetter ? 'better-score' : ''}}">{{item.score}}</text>
+					<text class="recommend {{item.isBetter ? 'better-icon' : ''}}">{{item.isBetter ? '高' : '低' }}</text>
+				</view>
+			</block>
+		</view>
+	</view>
+
+	<view class="button">
+		<text class="txt">进店逛逛</text>
+	</view>
+
+</view>

@@ -1,0 +1,79 @@
+/* pages/detail/childCpns/y-detail-shopInfo/y-detail-shopInfo.wxss */
+.shop-info {
+  padding: 40rpx 20rpx;
+  border-bottom: 13rpx solid var(--color-border);
+}
+.top .img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 1px solid var(--color-dark-text);
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.top .txt {
+  font-size: 38rpx;
+  vertical-align: middle;
+}
+.middle {
+  display: flex;
+}
+.middle > .del-info {
+  width: 50%;
+  display: flex;
+  text-align: center;
+  font-size: 30rpx;
+  border-right: 1px solid red;
+  padding: 0 20rpx;
+  margin: 60rpx 0;
+  justify-content: space-around;
+  color: #000;
+}
+.del-info > .item {
+  flex: 1;
+  text-align: center;
+}
+.del-score {
+  display: flex;
+  flex-direction: column;
+}
+.del-score {
+  width: 49%;
+  padding: 20rpx;
+  padding-left: 40rpx;
+  font-size: 26rpx;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.del-score .item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.del-score .item .score {
+  color: #008000;
+}
+.del-score .item .recommend {
+  color: #ffffff;
+  background: #008000;
+  padding: 4rpx;
+  border-radius: 6rpx;
+}
+.del-score .item .score.better-score {
+  color: #ff0000;
+}
+.item .recommend.better-icon {
+  background-color: #ff0000;
+}
+
+.button {
+  padding: 40rpx 0 60rpx;
+  text-align: center;
+}
+.button .txt {
+  padding: 10rpx 60rpx;
+  background-color: var(--color-border);
+  border-radius: 16rpx;
+}

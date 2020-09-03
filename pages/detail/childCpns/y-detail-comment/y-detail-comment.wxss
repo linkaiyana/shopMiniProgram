@@ -1,0 +1,39 @@
+/* pages/detail/childCpns/y-detail-commend/y-detail-commend.wxss */
+.comment {
+  padding: 30rpx 30rpx;
+  border-bottom: 13rpx solid var(--color-border);
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 70rpx;
+  border-bottom: 1rpx solid var(--color-bdbottom);
+}
+.message {
+  padding: 20rpx;
+}
+.message > .img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  vertical-align: middle;
+  font-size: 0;
+  margin-right: 20rpx;
+}
+.message > .name {
+  font-size: 34rpx;
+}
+.content {
+  color: #4b4949;
+  font-size: 28rpx;
+  text-indent: 2em;
+}
+.more {
+  color: var(--color-dark-text);
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.more > .time {
+  margin-right: 20rpx;
+}

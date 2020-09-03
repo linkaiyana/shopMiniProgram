@@ -1,0 +1,28 @@
+/* pages/detail/childCpns/y-detail-params/y-detail-params.wxss */
+.shop-params {
+  padding: 30rpx 40rpx;
+  border-bottom: 13rpx solid var(--color-border);
+}
+.size > .tr, .more > .tr, .tips {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1px solid var(--color-bdbottom);
+  font-size: 28rpx;
+}
+.size > .tr {
+  justify-content: space-between;
+}
+.more > .tr, .tips {
+  justify-content: flex-start;
+}
+.more > .tr > .key {
+  width: 200rpx;
+}
+.more > .tr > .value {
+  color: #f00;
+}
+.tips > .key {
+  width: 200rpx;
+  margin-right: 126rpx;
+}

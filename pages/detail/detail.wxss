@@ -1,1 +1,20 @@
 /* pages/detail/detail.wxss */
+#nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.nav-box {
+  padding-top: 88rpx;
+}
+.box {
+  padding-bottom: 120rpx;
+}
+.tab-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
