@@ -20,7 +20,6 @@ Component({
           url: '/pages/detail/detail?iid=' + iid,
         })
       }
-
     }
   }
 })

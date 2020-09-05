@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "y-shop-items": "/pages/shopcar/childCpns/y-shop-items/y-shop-items"
+  }
+}

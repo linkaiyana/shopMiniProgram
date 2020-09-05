@@ -29,4 +29,4 @@
 <view class="box"></view>
 
 <!-- 底部tabbar -->
-<y-detail-tab-bar class="tab-bar" />
+<y-detail-tab-bar class="tab-bar" bind:addCart="addCart" />

@@ -1,0 +1,9 @@
+<!--pages/shopcar/childCpns/y-bottom-nav/y-bottom-nav.wxml-->
+  <view class="bottom-nav">
+    <view class="btn" bind:tap="revAllCheck">
+      <y-check-btn ischecked="{{isCheckAll}}" />
+      <text class="txt">全选</text>
+    </view>
+    <view class="price">￥{{totalPrice}}</view>
+    <view class="toCalc" bindtap="toCalc">去计算({{count}})</view>
+  </view>

@@ -1,0 +1,28 @@
+/* pages/shopcar/childCpns/y-bottom-nav/y-bottom-nav.wxss */
+.bottom-nav {
+  height: 80rpx;
+  background-color: rgb(230, 225, 225);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 -2rpx 4rpx rgba(0, 0, 0, 0.2);
+}
+.btn {
+  display: flex;
+  margin-left: 30rpx;
+}
+.btn .txt {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  line-height: 80rpx;
+}
+.price {
+  line-height: 80rpx;
+}
+.toCalc {
+  width: 200rpx;
+  background-color: orangered;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 28rpx;
+}

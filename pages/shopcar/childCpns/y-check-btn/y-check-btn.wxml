@@ -1,0 +1,7 @@
+<!--pages/shopcar/childCpns/y-check-btn/y-check-btn.wxml-->
+  <view class="icon">
+    <view class="btn {{ischecked ? 'active' : ''}}">
+      <image class="img" hidden="{{!ischecked}}" src="/assets/cart/Tick.png" mode="widthFix"/>
+    </view>
+  </view>
+

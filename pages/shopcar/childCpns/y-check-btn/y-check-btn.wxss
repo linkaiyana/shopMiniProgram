@@ -1,0 +1,20 @@
+/* pages/shopcar/childCpns/y-check-btn/y-check-btn.wxss */
+.icon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.icon .btn {
+  width: 36rpx;
+  height: 36rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+.btn .img {
+  width: 36rpx;
+  height: 36rpx;
+}
+.icon .active {
+  background-color: orangered;
+}

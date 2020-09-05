@@ -1,0 +1,15 @@
+<!--pages/shopcar/childCpns/y-shopItems/y-shop-items.wxml-->
+  <view class="pro-item">
+    <y-check-btn bind:tap="revCheck" ischecked="{{pro.ischeck}}" />
+    <view class="image">
+      <image class="img" src="{{pro.image}}" mode="widthFix" />
+    </view>
+    <view class="message">
+      <view class="title">{{pro.title}}</view>
+      <view class="info">{{pro.desc}}</view>
+      <view class="more">
+        <text class="price">￥{{pro.price}}</text>
+        <text class="num">X{{pro.count}}</text>
+      </view>
+    </view>
+  </view>

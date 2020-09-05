@@ -1,2 +1,12 @@
 <!--pages/shopcar/shopcar.wxml-->
-<text>pages/shopcar/shopcar.wxml</text>
+<!-- 展示购物车数据 -->
+<y-shops-list products="{{products}}" />
+
+
+<!-- 展示底部工具栏 -->
+<y-bottom-nav class="bootom-nav"
+              is-check-all="{{isCheckAll}}" 
+              count="{{count}}"
+              total-price="{{totalPrice}}"
+              bind:revAllCheck="revAllCheck"
+              bind:toCalc="toCalc" />

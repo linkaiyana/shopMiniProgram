@@ -15,7 +15,7 @@
 		</view>
 	</view>
 	<view class="btn">
-		<view class="shopcar">加入购物车</view>
+		<view class="shopcar" bind:tap="addCart">加入购物车</view>
 		<view class="buy">购买</view>
 	</view>
 </view>

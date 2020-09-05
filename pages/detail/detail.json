@@ -8,8 +8,8 @@
     "y-detail-params": "/pages/detail/childCpns/y-detail-params/y-detail-params",
     "y-detail-tab-bar": "/pages/detail/childCpns/y-detail-tab-bar/y-detail-tab-bar",
 
-
     "y-goods": "/components/y-goods/y-goods",
     "y-nav": "/components/y-nav/y-nav"
-  }
+  },
+  "navigationBarTitleText": "商品详情"
 }

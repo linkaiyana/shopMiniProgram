@@ -1,0 +1,6 @@
+<!--pages/shopcar/childCpns/y-shops-list/y-shops-list.wxml-->
+<view class="shops-list">
+	<block wx:for="{{products}}">
+		<y-shop-items pro="{{item}}" index="{{index}}" />
+	</block>
+</view>

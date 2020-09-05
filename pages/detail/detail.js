@@ -7,6 +7,10 @@ import {
   getRecommend
 } from "../../service/detail"
 
+const App = getApp();
+
+
+
 Page({
 
   /**
@@ -183,6 +187,7 @@ Page({
       })
     }).exec()
   },
+ 
   // ------------事件监听--------------
 
   // 监听导航栏点击
@@ -218,10 +223,26 @@ Page({
   },
   // 监听图片加载
   imageLoad() {
-    this.data.scrollTops = [],
-      this.data.scrollTops.push(0)
     this._getScrollTop('#params', "paramsTop")
     this._getScrollTop('#comment', "commentTop")
     this._getScrollTop('#recommend', "reCommendTop")
+  },
+  // 监听加入购物车
+  addCart() {
+    const product = {};
+    product.image = this.data.banners[0];
+    product.title = this.data.baseInfo.title;
+    product.price = this.data.baseInfo.lowPrice;
+    product.desc = this.data.detailInfo.desc;
+    product.ischeck = true;
+    product.iid = this.data.iid;
+    App.addToCart(product).then(res => {
+      wx.showToast({
+        title: res,
+        mask: true
+      })
+    });
+    console.log(App.globalData.products);
+    
   }
 })

@@ -1,0 +1,49 @@
+/* pages/shopcar/childCpns/y-shopItems/y-shop-items.wxss */
+.pro-item {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 2rpx solid #ebe8e8;
+}
+
+.image {
+  margin: 0 20rpx;
+}
+.image .img {
+  width: 140rpx;
+  border-radius: 20rpx;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+}
+.message .title,
+.message .info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.message .title {
+  white-space: nowrap;
+  color: #000;
+}
+.message .info {
+  font-size: 26rpx;
+  text-overflow: -o-ellipsis-lastline;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.more {
+  display: flex;
+  justify-content: space-between;
+  line-height: 38rpx;
+}
+.price {
+  font-size: 38rpx;
+  color: orange;
+}
+.num {
+  font-size: 30rpx;
+}

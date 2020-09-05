@@ -1,1 +1,7 @@
 /* pages/shopcar/shopcar.wxss */
+.bootom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

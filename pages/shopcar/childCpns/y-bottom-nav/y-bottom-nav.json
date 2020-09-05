@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "y-check-btn": "/pages/shopcar/childCpns/y-check-btn/y-check-btn"
+  }
+}

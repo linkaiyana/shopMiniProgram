@@ -1,10 +1,13 @@
-// pages/detail/childCpns/y-detail-tab-bar/y-detail-tab-bar.js
+// pages/shopcar/childCpns/y-check-btn/y-check-btn.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    ischecked: {
+      type: Boolean,
+      value: true
+    }
   },
 
   /**
@@ -18,8 +21,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    addCart() {
-      this.triggerEvent('addCart')
-    }
+
   }
 })
