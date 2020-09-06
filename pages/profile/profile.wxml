@@ -1,2 +1,9 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<!-- 头部 -->
+<y-profile-header />
+
+<!-- 用户信息 -->
+<y-user-data />
+
+<!-- 菜单 -->
+<y-choose-list />

@@ -1,0 +1,20 @@
+/* pages/profile/childCpns/y-choose-list/y-choose-list.wxss */
+.list {
+  background-color: #f8f8f8;
+}
+.item {
+  padding-left: 50rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  margin-bottom: 2rpx;
+}
+.item:nth-child(3) {
+  margin-bottom: 30rpx;
+}
+.item .img {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}

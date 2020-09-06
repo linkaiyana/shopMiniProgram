@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "y-profile-header": "/pages/profile/childCpns/y-profile-header/y-profile-header",
+    "y-user-data": "/pages/profile/childCpns/y-user-data/y-user-data",
+    "y-choose-list": "/pages/profile/childCpns/y-choose-list/y-choose-list"
+  },
   "navigationBarTitleText": "我的"
 }

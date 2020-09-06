@@ -1,0 +1,20 @@
+/* pages/profile/childCpns/y-user-data/y-user-data.wxss */
+.data {
+  height: 200rpx;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(83, 83, 83);
+  background-color: #f8f8f8;
+  padding-bottom: 30rpx;
+}
+.item {
+  width: 33%;
+  text-align: center;
+  padding: 50rpx 0;
+  background-color: #fff;
+}
+.item .txt {
+  color: red;
+  font-weight: 700;
+  font-size: 40rpx;
+}

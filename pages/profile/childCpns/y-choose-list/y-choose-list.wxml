@@ -1,0 +1,23 @@
+<!--pages/profile/childCpns/y-choose-list/y-choose-list.wxml-->
+<view class="list">
+  <view class="item">
+    <image class="img" src="/assets/profile/message.png" />
+    我的消息
+  </view>
+  <view class="item">
+    <image class="img" src="/assets/profile/pointer.png" />
+    积分商城
+  </view>
+  <view class="item">
+    <image class="img" src="/assets/profile/vip.png" />
+    会员卡
+  </view>
+  <view class="item">
+    <image class="img" src="/assets/profile/cart.png" />
+    我的购物车
+  </view>
+  <view class="item">
+    <image class="img" src="/assets/profile/app.png" />
+    下载购物APP
+  </view>
+</view>
