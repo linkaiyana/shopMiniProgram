@@ -1,2 +1,10 @@
 <!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class="category">
+  <y-cate-menu categories="{{categories}}"
+             bind:itemTap="itemTap"
+             class="menu" />
+  <y-cate-content class="content"
+                  sub-categories="{{categoryItem[currentIndex].subCategories}}"
+                  category-detail="{{categoryItem[currentIndex].categoryDetail}}"
+                  bind:tabClick="tabClick" />
+</view>

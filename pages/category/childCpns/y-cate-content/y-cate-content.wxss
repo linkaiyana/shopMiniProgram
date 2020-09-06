@@ -1,0 +1,20 @@
+/* pages/category/childCpns/y-cate-content/y-cate-content.wxss */
+.cate {
+  height: 100%;
+}
+.sub-cate {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50rpx 20rpx 0;
+  text-align: center;
+}
+.sub-cate .item {
+  width: 33.3%;
+}
+.sub-cate .item .img {
+  width: 80%;
+}
+.sub-cate .item .txt {
+  font-size: 28rpx;
+  margin: 20rpx 0;
+}

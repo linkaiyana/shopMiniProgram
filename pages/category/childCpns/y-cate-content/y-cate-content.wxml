@@ -1,0 +1,21 @@
+<!--pages/category/childCpns/y-cate-content/y-cate-content.wxml-->
+<scroll-view class="cate" scroll-y>
+
+<!-- 展示分类明细 -->
+	<view class="sub-cate">
+		<block wx:for="{{subCategories}}" wx:key="index">
+			<view class="item">
+				<image class="img" src="{{item.image}}" mode="widthFix" />
+				<view class="txt">{{item.title}}</view>
+			</view>
+		</block>
+	</view>
+
+  <!-- 展示类型标题 -->
+  <y-tab-control titles="{{['综合', '新品', '销量']}}"
+                 bind:itemClick="tabClick" />
+
+  <!-- 展示商品数据 -->
+  <y-goods goods="{{categoryDetail[categoryDetail.currentType]}}"/>
+
+</scroll-view>

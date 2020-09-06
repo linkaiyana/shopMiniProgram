@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "y-cate-menu": "/pages/category/childCpns/y-cate-menu/y-cate-menu",
+    "y-cate-content": "/pages/category/childCpns/y-cate-content/y-cate-content"
+  },
   "navigationBarTitleText": "分类"
 }

@@ -1,0 +1,17 @@
+/* pages/category/childCpns/y-cate-menu/y-cate-menu.wxss */
+.cate-menu {
+  height: 100%;
+  font-size: 28rpx;
+  background-color: #f6f6f6;
+}
+.item {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.active {
+  background-color: #fff;
+  font-weight: 700;
+  color: #f55777;
+  border-left: 6rpx solid #f55777;
+}
