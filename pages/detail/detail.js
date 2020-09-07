@@ -9,8 +9,6 @@ import {
 
 const App = getApp();
 
-
-
 Page({
 
   /**
@@ -51,55 +49,17 @@ Page({
     // 获取推荐数据
     this._getRecommend();
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: this.data.baseInfo.title,
+      path: '/pages/detail/detail?iid=' + this.data.iid,
+      imageUrl: 'http://'+this.data.banners[0]
+    }
   },
+  // 页面滚动
   onPageScroll(option) {
     const scrollTop = option.scrollTop;
     let navCpn = this.selectComponent('#nav');
@@ -121,9 +81,6 @@ Page({
         currentIndex: 0
       })
     }
-    
-    
-    
   },
 
 
@@ -242,7 +199,5 @@ Page({
         mask: true
       })
     });
-    console.log(App.globalData.products);
-    
   }
 })

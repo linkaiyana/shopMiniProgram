@@ -26,59 +26,9 @@ Page({
     this._getCategory();
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
 //--------------私有函数-----------------------
   _getCategory() {
     getCategory().then(res => {
-      console.log(res);
       // 获取分类数据
       const categories = res.data.data.category.list;
       // 初始化数据
@@ -94,13 +44,10 @@ Page({
           }
         }
       })
-      console.log(res.data.data.category.list);
       this.setData({
         categories,
         categoryItem
       })
-      console.log(this.data.categoryItem);
-      
       // 获取分类子数据
       // 获取第一条数据
       this._getSubcategory(0);
@@ -112,16 +59,12 @@ Page({
   _getSubcategory(index) {
     const maitkey = this.data.categories[index].maitKey;
     getSubcategory(maitkey).then(res => {
-      console.log(res);
       const subCategoties = res.data.data.list;
-      console.log(subCategoties);
-      
       const dateType = `categoryItem[${index}].subCategories`
       // 设置数据
       this.setData({
         [dateType] : subCategoties
       })
-      console.log(this.data.categoryItem);
     })
   },
   _getCategoryDetail(index, type) {
@@ -151,7 +94,6 @@ Page({
   //监听tabControl点击
   tabClick(event) {
     const index = event.detail.index;
-    console.log(index);
     let currentType = ''
     switch(index) {
       case 0:

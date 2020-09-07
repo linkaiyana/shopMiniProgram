@@ -51,27 +51,6 @@ Page({
       title: `购物车(${this.data.products.length})`,
     })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
   updateData() {
     // 获取加入购物车的商品数量
     const count = this.data.products.filter(item => item.ischeck).reduce((value,item) => value + item.count , 0)
@@ -117,7 +96,6 @@ Page({
   toCalc() {
     // 判断是否有选中的商品
     const checkLength = this.data.products.find(item => item.ischeck)
-    console.log(checkLength);
     // 没有选中的商品，弹出弹窗
     if (!checkLength) {
       wx.showToast({

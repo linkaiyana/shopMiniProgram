@@ -15,12 +15,5 @@ Component({
    */
   data: {
     image: '/assets/profile/avatar.png'
-  },
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
   }
 })

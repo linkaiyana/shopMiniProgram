@@ -66,7 +66,6 @@ App({
         token
       },
       success: (res) => {
-        console.log(res);
         if(!res.data.errCode) {
           // token有效，存储token
           this.globalData.token = token
@@ -76,7 +75,6 @@ App({
           // token已失效，重新进行登录
           this.booleanLogin()
         }
-        
       },
       fail: (res) => {
         console.log(res);
@@ -88,7 +86,6 @@ App({
     wx.getUserInfo({
       success: (res) => {
         this.globalData.userInfo = res.userInfo
-        console.log(this.globalData.userInfo);
       },
       fail: () => {
         wx.showModal({

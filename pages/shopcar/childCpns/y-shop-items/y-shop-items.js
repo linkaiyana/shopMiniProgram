@@ -13,20 +13,11 @@ Component({
       type: Number
     }
   },
-
-  /**
-   * 组件的初始数据
-   */
-  data: {
-
-  },
-
   /**
    * 组件的方法列表
    */
   methods: {
     revCheck() {
-      console.log(App);
       const goods = this.properties.pro;
       const index = this.properties.index;
       goods.ischeck = !goods.ischeck;
