@@ -55,7 +55,7 @@ Page({
     // 获取加入购物车的商品数量
     const count = this.data.products.filter(item => item.ischeck).reduce((value,item) => value + item.count , 0)
     // 获取总价格
-    const totalPrice = this.data.products.filter(item => item.ischeck).reduce((value,item) => value + item.price * item.count , 0)
+    const totalPrice = this.data.products.filter(item => item.ischeck).reduce((value,item) => value + item.price * item.count , 0).toFixed(2)
     this.setData({
       count,
       totalPrice
