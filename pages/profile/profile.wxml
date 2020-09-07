@@ -1,6 +1,6 @@
 <!--pages/profile/profile.wxml-->
 <!-- 头部 -->
-<y-profile-header />
+<y-profile-header user-info="{{userInfo}}" />
 
 <!-- 用户信息 -->
 <y-user-data />

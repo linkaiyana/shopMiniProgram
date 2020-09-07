@@ -2,10 +2,10 @@
 <view class="header">
 	<view class="wrap">
 		<view class="h-img">
-			<image class="img" src="/assets/profile/avatar.png" />
+			<image class="img" src="{{userInfo.avatarUrl ? userInfo.avatarUrl : image}}" />
 		</view>
 		<view class="message">
-			<view class="info">登录/注册</view>
+			<view class="info">{{userInfo.nickName ? userInfo.nickName : '登录/注册'}}</view>
 			<view>
 				<image class="img" src="/assets/profile/phone.png" />
 				<text class="txt">暂未绑定手机号</text>

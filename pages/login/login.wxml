@@ -1,0 +1,2 @@
+<!--pages/login/login.wxml-->
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击获取用户信息</button>
